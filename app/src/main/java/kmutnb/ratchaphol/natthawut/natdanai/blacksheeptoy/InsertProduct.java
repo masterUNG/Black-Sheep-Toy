@@ -2,6 +2,8 @@ package kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -63,7 +65,18 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
             nameImageStrings[0] = strImagePath.substring(strImagePath.lastIndexOf("/") + 1);
             Log.d("26JulyV1", "nameImage ==> " + nameImageStrings[0]);
 
-        }   // if
+            // Show Choose Image
+            try {
+
+                Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
+                productImageViews[0].setImageBitmap(bitmap);
+
+            } catch (Exception e) {
+                Log.d("26JulyV1", "e ==> " + e.toString());
+            }   // try
+
+
+            }   // if
 
 
 
