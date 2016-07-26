@@ -1,5 +1,6 @@
 package kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,6 +14,8 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
     //Explicit
     private ImageView[] productImageViews;
     private Button[] productButtons;
+    private static final int[] pickImageINTS = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+            11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,21 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
         buttonController();
 
     }   // Main Method
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if ((requestCode == pickImageINTS[0]) && (resultCode == RESULT_OK)) {
+
+            Log.d("26JulyV1", "Button 1 OK");
+
+        }   // if
+
+
+
+
+    }   // onActivityResult
 
     private void buttonController() {
 
@@ -121,6 +139,13 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
             case R.id.button36:
                 Log.d("26JulyV1", "Click Button 1");
+
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                intent.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"),
+                        pickImageINTS[0]);
+
+
                 break;
             case R.id.button18:
                 Log.d("26JulyV1", "Click Button 2");
