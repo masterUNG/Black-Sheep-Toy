@@ -2,8 +2,6 @@ package kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -13,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
 
 import org.jibble.simpleftp.SimpleFTP;
 
@@ -77,15 +77,23 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
             String strImagePath = findPath(data.getData());
             Log.d("26JulyV1", "ImagePath = " + strImagePath);
-            pathImageStrings[intIndex] = strImagePath;
+
             nameImageStrings[intIndex] = strImagePath.substring(strImagePath.lastIndexOf("/") + 1);
             Log.d("26JulyV1", "nameImage ==> " + nameImageStrings[intIndex]);
+            pathImageStrings[intIndex] = "http://swiftcodingthai.com/sheep/image/" + nameImageStrings[intIndex];
+
+            upLoadImageToServer(strImagePath);
 
             // Show Choose Image
             try {
 
-                Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
-                productImageViews[intIndex].setImageBitmap(bitmap);
+//                Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
+//                productImageViews[intIndex].setImageBitmap(bitmap);
+
+                Picasso.with(this).
+                        load(pathImageStrings[intIndex]).
+                        resize(120,120).
+                        into(productImageViews[intIndex]);
 
             } catch (Exception e) {
                 Log.d("26JulyV1", "e ==> " + e.toString());
@@ -214,7 +222,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
         } else if (checkChooseImage()) {
             //Complete Image
-            upLoadImageToServer();
+           // upLoadImageToServer();
 
 
         } else {
@@ -227,7 +235,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
     }   // clickInsert
 
-    private void upLoadImageToServer() {
+    private void upLoadImageToServer(String strPathImage) {
 
         try {
 
@@ -235,7 +243,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
             simpleFTP.connect("ftp.swiftcodingthai.com", 21, "sheep@swiftcodingthai.com", "Abc12345");
             simpleFTP.bin();
             simpleFTP.cwd("image");
-            simpleFTP.stor(new File(pathImageStrings[0]));
+            simpleFTP.stor(new File(strPathImage));
             simpleFTP.disconnect();
 
 
