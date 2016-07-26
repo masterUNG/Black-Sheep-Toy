@@ -14,6 +14,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import org.jibble.simpleftp.SimpleFTP;
+
+import java.io.File;
+
 
 public class InsertProduct extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,6 +27,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
     private static final int[] pickImageINTS = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
             11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
     private String[] nameImageStrings = new String[32];
+    private String[] pathImageStrings = new String[32];
     private EditText nameEditText, brandEditText, priceEditText, stockEditText, vatEditText,
             shippingEditText, detailEditText;
     private String nameString, brandString, priceString, stockString, vatString,
@@ -72,6 +77,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
             String strImagePath = findPath(data.getData());
             Log.d("26JulyV1", "ImagePath = " + strImagePath);
+            pathImageStrings[intIndex] = strImagePath;
             nameImageStrings[intIndex] = strImagePath.substring(strImagePath.lastIndexOf("/") + 1);
             Log.d("26JulyV1", "nameImage ==> " + nameImageStrings[intIndex]);
 
@@ -208,6 +214,8 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
         } else if (checkChooseImage()) {
             //Complete Image
+            upLoadImageToServer();
+
 
         } else {
             // Not Choose Image Some
@@ -219,13 +227,31 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
     }   // clickInsert
 
+    private void upLoadImageToServer() {
+
+        try {
+
+            SimpleFTP simpleFTP = new SimpleFTP();
+            simpleFTP.connect("ftp.swiftcodingthai.com", 21, "sheep@swiftcodingthai.com", "Abc12345");
+            simpleFTP.bin();
+            simpleFTP.cwd("web");
+            simpleFTP.stor(new File(pathImageStrings[0]));
+            simpleFTP.disconnect();
+
+
+        } catch (Exception e) {
+            Log.d("26JulyV1", "e upload ==> " + e.toString());
+        }
+
+    }   // upLoadImage
+
     private boolean checkChooseImage() {
 
         boolean result = true;
 
        // for (int i=0;i<nameImageStrings.length;i+=1) {  // นี่คือต้นฉบับ
 
-        for (int i=0;i<3;i+=1) {
+        for (int i=0;i<2;i+=1) {
             if (nameImageStrings[i] == null ) {
                 return false; // Have null on String
             }   //if
