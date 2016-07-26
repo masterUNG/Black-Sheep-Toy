@@ -234,7 +234,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
             SimpleFTP simpleFTP = new SimpleFTP();
             simpleFTP.connect("ftp.swiftcodingthai.com", 21, "sheep@swiftcodingthai.com", "Abc12345");
             simpleFTP.bin();
-            simpleFTP.cwd("web");
+            simpleFTP.cwd("image");
             simpleFTP.stor(new File(pathImageStrings[0]));
             simpleFTP.disconnect();
 
@@ -251,7 +251,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
        // for (int i=0;i<nameImageStrings.length;i+=1) {  // นี่คือต้นฉบับ
 
-        for (int i=0;i<2;i+=1) {
+        for (int i=0;i<1;i+=1) {
             if (nameImageStrings[i] == null ) {
                 return false; // Have null on String
             }   //if
