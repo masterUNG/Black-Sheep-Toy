@@ -40,14 +40,14 @@
         <activity
             android:name=".OrderDetail"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainAdmin" />
-        <activity android:name=".UserAdmin" />
-        <activity android:name=".ProductAdmin" />
-        <activity android:name=".OrderAdmin" />
-        <activity android:name=".OrderAdminDetail" />
-        <activity android:name=".UpdateProductAdmin" />
-        <activity android:name=".EditProductAdmin" />
-        <activity android:name=".InsertProduct"></activity>
+        <activity android:name=".MainAdmin" android:screenOrientation="portrait" />
+        <activity android:name=".UserAdmin" android:screenOrientation="portrait" />
+        <activity android:name=".ProductAdmin" android:screenOrientation="portrait" />
+        <activity android:name=".OrderAdmin" android:screenOrientation="portrait" />
+        <activity android:name=".OrderAdminDetail" android:screenOrientation="portrait" />
+        <activity android:name=".UpdateProductAdmin" android:screenOrientation="portrait" />
+        <activity android:name=".EditProductAdmin" android:screenOrientation="portrait" />
+        <activity android:name=".InsertProduct" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

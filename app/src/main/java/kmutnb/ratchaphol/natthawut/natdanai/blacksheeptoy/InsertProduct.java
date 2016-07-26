@@ -58,23 +58,25 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if ((requestCode == pickImageINTS[0]) && (resultCode == RESULT_OK)) {
+        int intIndex = requestCode;
+        Log.d("26JulyV1", "Index ==> " + intIndex);
+
+        if ((requestCode == pickImageINTS[intIndex]) && (resultCode == RESULT_OK)) {
 
             String strImagePath = findPath(data.getData());
             Log.d("26JulyV1", "ImagePath = " + strImagePath);
-            nameImageStrings[0] = strImagePath.substring(strImagePath.lastIndexOf("/") + 1);
-            Log.d("26JulyV1", "nameImage ==> " + nameImageStrings[0]);
+            nameImageStrings[intIndex] = strImagePath.substring(strImagePath.lastIndexOf("/") + 1);
+            Log.d("26JulyV1", "nameImage ==> " + nameImageStrings[intIndex]);
 
             // Show Choose Image
             try {
 
                 Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
-                productImageViews[0].setImageBitmap(bitmap);
+                productImageViews[intIndex].setImageBitmap(bitmap);
 
             } catch (Exception e) {
                 Log.d("26JulyV1", "e ==> " + e.toString());
             }   // try
-
 
             }   // if
 
@@ -187,96 +189,264 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.button18:
                 Log.d("26JulyV1", "Click Button 2");
+
+                Intent intent1 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent1.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent1, "Select Picture"),
+                        pickImageINTS[1]);
+
                 break;
             case R.id.button37:
                 Log.d("26JulyV1", "Click Button 3");
+
+                Intent intent2 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent2.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent2, "Select Picture"),
+                        pickImageINTS[2]);
+
                 break;
             case R.id.button38:
                 Log.d("26JulyV1", "Click Button 4");
+
+                Intent intent3 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent3.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent3, "Select Picture"),
+                        pickImageINTS[3]);
+
                 break;
             case R.id.button39:
                 Log.d("26JulyV1", "Click Button 5");
+
+                Intent intent4 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent4.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent4, "Select Picture"),
+                        pickImageINTS[4]);
+
                 break;
             case R.id.button40:
                 Log.d("26JulyV1", "Click Button 6");
+
+                Intent intent5 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent5.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent5, "Select Picture"),
+                        pickImageINTS[5]);
+
                 break;
             case R.id.button41:
                 Log.d("26JulyV1", "Click Button 7");
+
+                Intent intent6 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent6.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent6, "Select Picture"),
+                        pickImageINTS[6]);
+
                 break;
             case R.id.button42:
                 Log.d("26JulyV1", "Click Button 8");
+                Intent intent7 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent7.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent7, "Select Picture"),
+                        pickImageINTS[7]);
+
                 break;
             case R.id.button43:
                 Log.d("26JulyV1", "Click Button 9");
+
+                Intent intent8 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent8.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent8, "Select Picture"),
+                        pickImageINTS[8]);
+
                 break;
             case R.id.button44:
                 Log.d("26JulyV1", "Click Button 10");
+
+                Intent intent9 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent9.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent9, "Select Picture"),
+                        pickImageINTS[9]);
+
                 break;
             case R.id.button45:
                 Log.d("26JulyV1", "Click Button 11");
+
+                Intent intent10 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent10.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent10, "Select Picture"),
+                        pickImageINTS[10]);
+
                 break;
             case R.id.button46:
                 Log.d("26JulyV1", "Click Button 12");
+
+                Intent intent11 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent11.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent11, "Select Picture"),
+                        pickImageINTS[11]);
+
                 break;
             case R.id.button47:
                 Log.d("26JulyV1", "Click Button 13");
+
+                Intent intent12 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent12.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent12, "Select Picture"),
+                        pickImageINTS[12]);
+
                 break;
             case R.id.button48:
                 Log.d("26JulyV1", "Click Button 14");
+
+                Intent intent13 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent13.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent13, "Select Picture"),
+                        pickImageINTS[13]);
+
                 break;
             case R.id.button49:
                 Log.d("26JulyV1", "Click Button 15");
+
+                Intent intent14 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent14.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent14, "Select Picture"),
+                        pickImageINTS[14]);
+
                 break;
             case R.id.button50:
                 Log.d("26JulyV1", "Click Button 16");
+                Intent intent15 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent15.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent15, "Select Picture"),
+                        pickImageINTS[15]);
+
                 break;
             case R.id.button51:
                 Log.d("26JulyV1", "Click Button 17");
+                Intent intent16 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent16.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent16, "Select Picture"),
+                        pickImageINTS[16]);
+
                 break;
             case R.id.button52:
                 Log.d("26JulyV1", "Click Button 18");
+                Intent intent17 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent17.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent17, "Select Picture"),
+                        pickImageINTS[17]);
+
                 break;
             case R.id.button53:
                 Log.d("26JulyV1", "Click Button 19");
+                Intent intent18 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent18.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent18, "Select Picture"),
+                        pickImageINTS[18]);
+
                 break;
             case R.id.button54:
                 Log.d("26JulyV1", "Click Button 20");
+                Intent intent19 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent19.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent19, "Select Picture"),
+                        pickImageINTS[19]);
+
                 break;
             case R.id.button55:
                 Log.d("26JulyV1", "Click Button 21");
+                Intent intent20 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent20.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent20, "Select Picture"),
+                        pickImageINTS[20]);
+
                 break;
             case R.id.button56:
                 Log.d("26JulyV1", "Click Button 22");
+                Intent intent21 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent21.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent21, "Select Picture"),
+                        pickImageINTS[21]);
+
                 break;
             case R.id.button57:
                 Log.d("26JulyV1", "Click Button 23");
+                Intent intent22 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent22.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent22, "Select Picture"),
+                        pickImageINTS[22]);
+
                 break;
             case R.id.button58:
                 Log.d("26JulyV1", "Click Button 24");
+                Intent intent23 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent23.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent23, "Select Picture"),
+                        pickImageINTS[23]);
+
                 break;
             case R.id.button59:
                 Log.d("26JulyV1", "Click Button 25");
+                Intent intent24 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent24.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent24, "Select Picture"),
+                        pickImageINTS[24]);
+
                 break;
             case R.id.button60:
                 Log.d("26JulyV1", "Click Button 26");
+                Intent intent25 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent25.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent25, "Select Picture"),
+                        pickImageINTS[25]);
+
                 break;
             case R.id.button61:
                 Log.d("26JulyV1", "Click Button 27");
+                Intent intent26 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent26.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent26, "Select Picture"),
+                        pickImageINTS[26]);
+
                 break;
             case R.id.button62:
                 Log.d("26JulyV1", "Click Button 28");
+                Intent intent27 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent27.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent27, "Select Picture"),
+                        pickImageINTS[27]);
+
                 break;
             case R.id.button63:
                 Log.d("26JulyV1", "Click Button 29");
+                Intent intent28 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent28.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent28, "Select Picture"),
+                        pickImageINTS[28]);
+
                 break;
             case R.id.button64:
                 Log.d("26JulyV1", "Click Button 30");
+                Intent intent29 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent29.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent29, "Select Picture"),
+                        pickImageINTS[29]);
+
                 break;
             case R.id.button65:
                 Log.d("26JulyV1", "Click Button 31");
+                Intent intent30 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent30.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent30, "Select Picture"),
+                        pickImageINTS[30]);
+
                 break;
             case R.id.button66:
                 Log.d("26JulyV1", "Click Button 32");
+                Intent intent31 = new Intent(Intent.ACTION_GET_CONTENT);
+                intent31.setType("image/*");
+                startActivityForResult(Intent.createChooser(intent31, "Select Picture"),
+                        pickImageINTS[31]);
+
                 break;
 
         }   // switch
