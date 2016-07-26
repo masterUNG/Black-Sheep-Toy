@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/editText10"
                     android:layout_weight="2.16"
-                    android:inputType="none" />
+                    android:inputType="none|text" />
             </LinearLayout>
 
             <LinearLayout
@@ -73,7 +73,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText13"
-                    android:layout_weight="2" />
+                    android:layout_weight="2"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
@@ -93,7 +94,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText14"
-                    android:layout_weight="2" />
+                    android:layout_weight="2"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,7 +115,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText15"
-                    android:layout_weight="2" />
+                    android:layout_weight="2"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
@@ -133,7 +136,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText17"
-                    android:layout_weight="2.25" />
+                    android:layout_weight="2.25"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
@@ -153,7 +157,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText18"
-                    android:layout_weight="2.33" />
+                    android:layout_weight="2.33"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
@@ -173,589 +178,648 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editText16"
-                    android:layout_weight="2.23" />
+                    android:layout_weight="2.23"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="15dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView5" />
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView5"
+                    android:layout_weight="1" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button36" />
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ 1"
+                    android:id="@+id/button36"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView6" />
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView6"
+                    android:layout_weight="1" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button37" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView7" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button38" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView8" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button39" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView9" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button40" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView10" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button67" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView11" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button68" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView12" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button41" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView13" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button42" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView14" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button43" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView15" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button44" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView16" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button45" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView17" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button46" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView18" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button47" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView19" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button48" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView20" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button49" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView21" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button50" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView22" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button51" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView24" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button53" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView25" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button54" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView26" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button55" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView27" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button56" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView28" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button57" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView29" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button58" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView30" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button59" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView31" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button60" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView32" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button61" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView33" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button62" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView34" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button63" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView35" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button64" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView36" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button65" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView37" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เลือกรูปภาพ"
-                    android:id="@+id/button66" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Insert"
-                    android:id="@+id/button19"
-                    android:layout_weight="1"
-                    android:onClick="clickSignIn"
-                    android:background="#d4ffffff"
-                    android:textStyle="bold"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignTop="@+id/button18"
-                    android:layout_toRightOf="@+id/button18"
-                    android:layout_toEndOf="@+id/button18" />
-
-                <Button
-                    android:layout_width="174dp"
-                    android:layout_height="wrap_content"
-                    android:text="Cancel"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ 2"
                     android:id="@+id/button18"
-                    android:onClick="clickCancleInsert"
-                    android:nestedScrollingEnabled="false"
-                    android:background="#030303"
-                    android:layout_marginRight="0.5dp"
-                    android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:layout_alignParentBottom="true" />
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView7"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button37"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView8"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button38"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView9"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button39"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView10"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button40"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView11"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button41"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView12"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button42"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView13"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button43"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView14"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button44"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView15"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button45"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView16"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button46"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView17"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button47"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView18"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button48"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView19"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button49"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView20"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button50"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView21"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button51"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView22"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button52"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView23"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button53"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView24"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button54"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView25"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button55"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView26"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button56"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView27"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button57"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView28"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button58"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView29"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button59"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView30"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button60"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView31"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button61"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView32"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button62"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView33"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button63"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView34"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button64"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView35"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button65"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
+                    android:id="@+id/imageView36"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="เลือกรูปภาพ"
+                    android:id="@+id/button66"
+                    android:layout_weight="1" />
             </LinearLayout>
 
         </LinearLayout>
