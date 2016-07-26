@@ -822,6 +822,28 @@
                     android:layout_weight="1" />
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/button67"
+                    android:layout_weight="1"
+                    android:onClick="clickCancelInsert" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insert "
+                    android:id="@+id/button68"
+                    android:layout_weight="1"
+                    android:onClick="clickInsert" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

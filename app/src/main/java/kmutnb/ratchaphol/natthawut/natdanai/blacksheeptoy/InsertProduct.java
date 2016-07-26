@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 
@@ -22,6 +23,12 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
     private static final int[] pickImageINTS = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
             11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
     private String[] nameImageStrings = new String[32];
+    private EditText nameEditText, brandEditText, priceEditText, stockEditText, vatEditText,
+            shippingEditText, detailEditText;
+    private String nameString, brandString, priceString, stockString, vatString,
+            shippingString, detailString;
+    private boolean statusImageABoolean = true;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,9 +85,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
                 Log.d("26JulyV1", "e ==> " + e.toString());
             }   // try
 
-            }   // if
-
-
+        }   // if
 
 
     }   // onActivityResult
@@ -165,12 +170,46 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
         productButtons[30] = (Button) findViewById(R.id.button65);
         productButtons[31] = (Button) findViewById(R.id.button66);
 
+        nameEditText = (EditText) findViewById(R.id.editText10);
+        brandEditText = (EditText) findViewById(R.id.editText13);
+        priceEditText = (EditText) findViewById(R.id.editText14);
+        stockEditText = (EditText) findViewById(R.id.editText15);
+        vatEditText = (EditText) findViewById(R.id.editText17);
+        shippingEditText = (EditText) findViewById(R.id.editText18);
+        detailEditText = (EditText) findViewById(R.id.editText16);
+
     }   // bindWidget
 
-    public void clickCancleInsert(View view) {
+    public void clickCancelInsert(View view) {
         finish();
 
     }   // clickCancel
+
+    public void clickInsert(View view) {
+
+        nameString = nameEditText.getText().toString().trim();
+        brandString = brandEditText.getText().toString().trim();
+        priceString = priceEditText.getText().toString().trim();
+        stockString = stockEditText.getText().toString().trim();
+        vatString = vatEditText.getText().toString().trim();
+        shippingString = shippingEditText.getText().toString().trim();
+        detailString = detailEditText.getText().toString().trim();
+
+        //Check Space
+        if (nameString.equals("") || brandString.equals("") ||
+                priceString.equals("") || stockString.equals("") ||
+                vatString.equals("") || shippingString.equals("") ||
+                detailString.equals("")) {
+
+            //Have Space
+            MyAlertDialog myAlertDialog = new MyAlertDialog();
+            myAlertDialog.myDialog(this, R.drawable.icon_myaccount, "Have Space",
+                    "Please Fill All Every Blank");
+
+        }   // if
+
+
+    }   // clickInsert
 
     @Override
     public void onClick(View view) {
