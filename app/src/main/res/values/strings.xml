@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Black Sheep Toy</string>
+
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="name">ชื่อ </string>
+    <string name="surname">นามสกุล </string>
+    <string name="idcard">หมายเลขบัตรประจำตัวประชาชน</string>
+    <string name="user">ชื่อผู้ใช้ </string>
+    <string name="password">รหัสผ่าน </string>
+    <string name="email">E-mail </string>
+    <string name="phone_number">เบอร์โทรศัพท์ </string>
+    <string name="howtoorder">How to Order</string>
+    <string name="howtodetail">ขั้นตอนการสั่งซื้อ\n\n
+
+        ท่านสามารถสั่งซื้อได้โดยกดปุ่ม Order ในหน้าสินค้านั้น\n
+        และท่านสามารถดูตะกร้าสินค้าของท่านโดยกดปุ่ม READ ORDER ที่หน้าหลัก\n
+        เมื่อท่านมั่นใจแล้วว่าจะสั่งสินค้านี้ ให้ทำการกดปุ่ม CHECK BILL ได้เลย\n\n
+
+        ท่านสามารถเข้าไปดูประวัติการสั่งซื้อได้โดยกดปุ่ม History ที่หน้าหลัก\n\n
+
+        ขั้นตอนการแจ้งชำระเงิน\n\n
+        *** เมื่อท่านสั่งซื้อสินค้าแล้วโปรดรอ Email ยืนยันออเดอร์ก่อน *** \n\n
+
+        ทางร้านเรามีบัญชีเพียง 3 บัญชีนี้เท่านั้น หากไม่ใช่อย่าโอนเงินเด็ดขาด \n\n
+
+        ชื่อบัญชี ณัฐดนัย เข็มมาลากุล (เหมือนกันทุกธนาคาร) \n
+        กรุงไทย สาขา เอสพลานาด งามวงศ์วาน-แคราย \n
+        เลขบัญชี 9822693923   \n\n
+
+        กสิกรไทย สาขา เอสพลานาด รัตนาธิเบศร์ \n
+        เลขบัญชี 9882082390  \n\n
+
+        กรุงเทพ สาขา บางกรวย  \n
+        เลขบัญชี 2080826734  \n\n
+
+        ***ในการสั่งสินค้า ขอความกรุณาลูกค้าโอนเงินภายใน \n3 วันหลังจากการสั่งซื้อ\n\n
+
+        จากนั้นส่งหลักฐานการชำระเงินพร้อมเลขที่ใบเสร็จ\n
+        ให้กับเราผ่านช่องทางการอินบ๊อกใน \n
+        Facebook Fanpage ตามคอนแท็คด้านล่าง(ปุ่ม CONTACT US) \n
+        หรือผ่านทาง E-mail: blacksheeptoy@gmail.com\n\n
+
+        ช่องทางติดต่อเรา\n\n
+
+        สามารถติดต่อเราได้สองช่องทาง\n
+        ผ่านทาง Facebook Fanpage\n
+        หรือผ่านทาง E-mail: blacksheeptoy@gmail.com\n\n
+
+        **หากมีปัญหาเกี่ยวกับสินค้าทางเราจะแจ้งให้ท่าน\n
+        ทราบทาง E-mail \n\n
+        ขอบคุณที่เชื่อมั่นในเรา</string>
+
+
+    <string name="regis">Register</string>
+
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy.order_admin"
+    android:background="@drawable/bgblue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:id="@+id/textView29"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        android:textColor="#030303"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/button14"
+        android:background="#030303"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_weight="3"
+        android:textSize="@dimen/h2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clickBack" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView4"
+        android:background="#64ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button14"
+        android:layout_below="@+id/linearLayout18" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout17"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView29">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:id="@+id/button31"
+            android:layout_weight="1"
+            android:onClick="clickAllOrder"
+            android:textStyle="bold"
+            android:background="#1f25dd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/button32"
+            android:layout_weight="1"
+            android:onClick="clickDeleteOrderAdmin"
+            android:textStyle="bold"
+            android:background="#ff0000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout18"
+        android:layout_below="@+id/linearLayout17"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รอชำระ"
+            android:id="@+id/button33"
+            android:layout_weight="1"
+            android:onClick="clickWait"
+            android:textStyle="bold"
+            android:background="#fd8a07" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="โอนเงินแล้ว"
+            android:id="@+id/button34"
+            android:layout_weight="1"
+            android:onClick="clickSendMoney"
+            android:textStyle="bold"
+            android:background="#0affe2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ส่งเรียบร้อย"
+            android:id="@+id/button35"
+            android:onClick="clickGoSent"
+            android:textStyle="bold"
+            android:background="#45f91d" />
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy.update_admin"
+    android:background="@drawable/bgblue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/textView38"
+        android:textSize="@dimen/h1"
+        android:textColor="#030303"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView6"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button20"
+        android:layout_below="@+id/linearLayout15" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/button20"
+        android:onClick="clickBackUpdateProduct"
+        android:background="#030303"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_weight="3"
+        android:textSize="@dimen/h2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView38"
+        android:id="@+id/linearLayout14"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:id="@+id/button25"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            android:background="#ffffff"
+            android:onClick="clickAllUpdate"
+            android:layout_margin="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low Stock"
+            android:id="@+id/button26"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            android:background="#e12e2e"
+            android:onClick="clickLowStock"
+            android:layout_margin="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/linearLayout14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout15">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instock"
+            android:id="@+id/button28"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            android:background="#0d2cf7"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="clickInstock" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out of Stock"
+            android:id="@+id/button27"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            android:background="#8f8b8b"
+            android:onClick="clickOutofStock"
+            android:layout_margin="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</RelativeLayout>

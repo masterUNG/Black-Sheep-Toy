@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ToyListView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ToyDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderToy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HowToOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderDetail"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainAdmin" />
+        <activity android:name=".UserAdmin" />
+        <activity android:name=".ProductAdmin" />
+        <activity android:name=".OrderAdmin" />
+        <activity android:name=".OrderAdminDetail" />
+        <activity android:name=".UpdateProductAdmin" />
+        <activity android:name=".EditProductAdmin" />
+        <activity android:name=".InsertProduct"></activity>
+    </application>
+
+</manifest>

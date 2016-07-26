@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy.ToyListView"
+    android:background="@drawable/bggrey">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Black Sheep Toy"
+                android:id="@+id/textView50"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/h1"
+                android:background="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:id="@+id/button12"
+                android:textSize="@dimen/h2"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:onClick="clickHistory"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:id="@+id/button14"
+                android:layout_weight="1"
+                android:onClick="clickAll"
+                android:textStyle="bold"
+                android:background="#a3ffffff" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bandai"
+                android:id="@+id/button15"
+                android:layout_weight="1"
+                android:onClick="clickBandai"
+                android:textStyle="bold"
+                android:background="#e3000000"
+                android:textColor="#fefefe" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banpresto"
+                android:id="@+id/button16"
+                android:layout_weight="1"
+                android:onClick="clickBanpresto"
+                android:textStyle="bold"
+                android:background="#e3000000"
+                android:textColor="#fefefe"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Megahouse"
+                android:id="@+id/button17"
+                android:layout_weight="1"
+                android:onClick="clickMegahouse"
+                android:textStyle="bold"
+                android:background="#e3000000"
+                android:textColor="#fefefe" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="READ ORDER"
+            android:id="@+id/button3"
+            android:layout_alignParentBottom="true"
+            android:onClick="clickReadOrder"
+            android:background="#030303"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_weight="3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How To Order"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:background="#e7fbfbfb"
+            android:onClick="clickHowtoOrder"
+            android:nestedScrollingEnabled="false"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

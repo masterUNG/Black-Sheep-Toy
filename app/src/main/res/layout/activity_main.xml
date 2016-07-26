@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy.MainActivity"
+    android:background="@drawable/bggrey">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:onClick="clickSignUp"
+            android:nestedScrollingEnabled="false"
+            android:background="#030303"
+            android:layout_marginRight="0.5dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="clickSignIn"
+            android:background="#d4ffffff"
+            android:layout_marginLeft="0.5dp"
+            android:textStyle="bold"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#14ffffff"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon"
+            android:id="@+id/imageView"
+            android:src="@drawable/logofinal"
+            android:layout_weight="0.49" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/textView9"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold"
+            android:textColor="#030303" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="User : "
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="Password : "
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+</RelativeLayout>
