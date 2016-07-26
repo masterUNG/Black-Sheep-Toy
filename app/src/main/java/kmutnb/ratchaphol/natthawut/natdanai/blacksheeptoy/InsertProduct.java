@@ -1,7 +1,10 @@
 package kmutnb.ratchaphol.natthawut.natdanai.blacksheeptoy;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -30,13 +33,32 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
     }   // Main Method
 
+    private String findPath(Uri uri) {
+        String imagePath;
+
+        String[] columns = {MediaStore.Images.Media.DATA};
+        Cursor cursor = getContentResolver().query(uri, columns, null, null, null);
+
+        if (cursor != null) { // case gallery
+            cursor.moveToFirst();
+            int columnIndex = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+            imagePath = cursor.getString(columnIndex);
+        } else { // case another app
+            imagePath = uri.getPath();
+
+        }
+        return imagePath;
+
+    }   // findPath
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if ((requestCode == pickImageINTS[0]) && (resultCode == RESULT_OK)) {
 
-            Log.d("26JulyV1", "Button 1 OK");
+            String strImagePath = findPath(data.getData());
+            Log.d("26JulyV1", "ImagePath = " + strImagePath);
 
         }   // if
 
