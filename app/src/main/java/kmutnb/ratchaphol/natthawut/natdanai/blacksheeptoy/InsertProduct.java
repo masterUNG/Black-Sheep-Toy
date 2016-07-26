@@ -19,6 +19,7 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
     private Button[] productButtons;
     private static final int[] pickImageINTS = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
             11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+    private String[] nameImageStrings = new String[32];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,8 @@ public class InsertProduct extends AppCompatActivity implements View.OnClickList
 
             String strImagePath = findPath(data.getData());
             Log.d("26JulyV1", "ImagePath = " + strImagePath);
+            nameImageStrings[0] = strImagePath.substring(strImagePath.lastIndexOf("/") + 1);
+            Log.d("26JulyV1", "nameImage ==> " + nameImageStrings[0]);
 
         }   // if
 
